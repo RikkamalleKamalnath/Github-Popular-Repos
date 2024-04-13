@@ -84,7 +84,7 @@ class GithubPopularRepos extends Component {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderFailureView()
+        return this.renderRepositoriesListView()
       case apiStatusConstants.failure:
         return this.renderFailureView()
       case apiStatusConstants.inProgress:
